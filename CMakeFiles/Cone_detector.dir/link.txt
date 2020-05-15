@@ -1,0 +1,1 @@
+/usr/bin/c++   -pthread   CMakeFiles/Cone_detector.dir/src/detect_cone.cpp.o  -o Cone_detector  -L/home/ward/camera_os/usr/lib 

@@ -1,0 +1,2 @@
+/usr/bin/ar qc lib3d.a  CMakeFiles/3d.dir/src/3d_functions.cpp.o
+/usr/bin/ranlib lib3d.a

@@ -1,0 +1,7 @@
+/home/ward/camera_os/CMakeFiles/rebuild_cache.dir
+/home/ward/camera_os/CMakeFiles/cameras.dir
+/home/ward/camera_os/CMakeFiles/3d.dir
+/home/ward/camera_os/CMakeFiles/calibrate.dir
+/home/ward/camera_os/CMakeFiles/demo.dir
+/home/ward/camera_os/CMakeFiles/calibrate_pics.dir
+/home/ward/camera_os/CMakeFiles/edit_cache.dir

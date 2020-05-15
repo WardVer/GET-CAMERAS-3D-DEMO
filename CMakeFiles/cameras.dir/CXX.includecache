@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+./inc/cameras.hpp
+GxIAPI.h
+./inc/GxIAPI.h
+DxImageProc.h
+./inc/DxImageProc.h
+string
+-
+stdio.h
+-
+iostream
+-
+
+/home/ward/camera_lib/Galaxy_camera/inc/DxImageProc.h
+stdafx.h
+/home/ward/camera_lib/Galaxy_camera/inc/stdafx.h
+stdlib.h
+-
+string.h
+-
+
+/home/ward/camera_lib/Galaxy_camera/inc/GxIAPI.h
+stdint.h
+-
+stdint.h
+-
+stdint.h
+-
+stddef.h
+-
+Windows.h
+-
+
+/home/ward/camera_os/src/cameras.cpp
+cameras.hpp
+/home/ward/camera_os/src/cameras.hpp
+

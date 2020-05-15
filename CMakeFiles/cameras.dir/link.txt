@@ -1,0 +1,2 @@
+/usr/bin/ar qc libcameras.a  CMakeFiles/cameras.dir/src/cameras.cpp.o
+/usr/bin/ranlib libcameras.a
