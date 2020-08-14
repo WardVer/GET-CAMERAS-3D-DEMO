@@ -79,7 +79,7 @@ after this you will see this image:
 
 Here you can adjust the sliders H (Hue), S (Saturation), and V (Value) until only your desired object is visible on the bottom images.
 
-From here on out the program will calculate the 3D location from the images.
+From here on out the program will calculate the 3D location from the images. THE 3D Location has the top left square as origin point and also uses the pattern as base for x, y and z axis. The pattern is not required anymore after the image within the calibration phase has been taken.
 
 
 
