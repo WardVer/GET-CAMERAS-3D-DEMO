@@ -28,9 +28,13 @@ all you need is a bright object of just 1 color (a color that shouldn't be prese
 After everything has been compiled and installed, you will have to edit the CmakeList.txt
 
 * You have to make sure that the line "find_package( OpenCV REQUIRED )" finds the exact OpenCV version that you compiled before.
-* you need to link the headers of the camera drivers in the cmakelists.txt file, they are called DxImageProc.h and GxIAPI.h
+* you need to link the headers of the camera drivers (add their include folder) in the cmakelists.txt file, they are called DxImageProc.h and GxIAPI.h
 
 ## Usage
+
+### installation
+
+if everything is linked correctly in the cmakelists.txt file then simply run 'cmake .' and 'make' within the main folder
 
 ### Calibration
 
