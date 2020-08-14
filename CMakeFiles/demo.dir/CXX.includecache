@@ -28,6 +28,26 @@ opencv2/features2d.hpp
 chrono
 -
 
+./inc/DxImageProc.h
+stdafx.h
+./inc/stdafx.h
+stdlib.h
+-
+string.h
+-
+
+./inc/GxIAPI.h
+stdint.h
+-
+stdint.h
+-
+stdint.h
+-
+stddef.h
+-
+Windows.h
+-
+
 ./inc/cameras.hpp
 GxIAPI.h
 ./inc/GxIAPI.h
@@ -40,34 +60,22 @@ stdio.h
 iostream
 -
 
-/home/ward/camera_lib/Galaxy_camera/inc/DxImageProc.h
-stdafx.h
-/home/ward/camera_lib/Galaxy_camera/inc/stdafx.h
-stdlib.h
--
-string.h
--
-
-/home/ward/camera_lib/Galaxy_camera/inc/GxIAPI.h
-stdint.h
--
-stdint.h
--
-stdint.h
--
-stddef.h
--
-Windows.h
--
-
-/home/ward/camera_os/src/demo.cpp
+/home/ward/get-cameras-demo/GET-CAMERAS-3D-DEMO/src/demo.cpp
 3d_functions.hpp
-/home/ward/camera_os/src/3d_functions.hpp
+/home/ward/get-cameras-demo/GET-CAMERAS-3D-DEMO/src/3d_functions.hpp
 cameras.hpp
-/home/ward/camera_os/src/cameras.hpp
+/home/ward/get-cameras-demo/GET-CAMERAS-3D-DEMO/src/cameras.hpp
 queue
 -
 thread
+-
+iostream
+-
+opencv2/highgui/highgui.hpp
+/home/ward/get-cameras-demo/GET-CAMERAS-3D-DEMO/src/opencv2/highgui/highgui.hpp
+opencv2/imgproc/imgproc.hpp
+/home/ward/get-cameras-demo/GET-CAMERAS-3D-DEMO/src/opencv2/imgproc/imgproc.hpp
+unistd.h
 -
 
 /usr/local/include/opencv4/opencv2/calib3d.hpp
@@ -906,6 +914,10 @@ opencv2/imgcodecs.hpp
 opencv2/videoio.hpp
 /usr/local/include/opencv4/opencv2/opencv2/videoio.hpp
 
+/usr/local/include/opencv4/opencv2/highgui/highgui.hpp
+opencv2/highgui.hpp
+/usr/local/include/opencv4/opencv2/highgui/opencv2/highgui.hpp
+
 /usr/local/include/opencv4/opencv2/imgcodecs.hpp
 opencv2/core.hpp
 /usr/local/include/opencv4/opencv2/opencv2/core.hpp
@@ -913,6 +925,10 @@ opencv2/core.hpp
 /usr/local/include/opencv4/opencv2/imgproc.hpp
 opencv2/core.hpp
 /usr/local/include/opencv4/opencv2/opencv2/core.hpp
+
+/usr/local/include/opencv4/opencv2/imgproc/imgproc.hpp
+opencv2/imgproc.hpp
+/usr/local/include/opencv4/opencv2/imgproc/opencv2/imgproc.hpp
 
 /usr/local/include/opencv4/opencv2/ml.hpp
 opencv2/core.hpp

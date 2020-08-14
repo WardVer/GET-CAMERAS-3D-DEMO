@@ -180,7 +180,7 @@ Point3f projector3D::object_position(Point2f point1, Point2f point2, bool ground
     
     if(ground_coords)
     { 
-        new_3D_points = rotation_ground.inv() * (new_3D_points); 
+        new_3D_points = rotation_ground.inv() * ((new_3D_points) - translation_ground); 
     }
     
     Point3f final_position = Point3f(new_3D_points.at<double>(0,0), new_3D_points.at<double>(1,0), new_3D_points.at<double>(2,0));

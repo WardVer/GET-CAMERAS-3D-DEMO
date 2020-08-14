@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/ward/camera_os/src/calibrate.cpp
+/home/ward/get-cameras-demo/GET-CAMERAS-3D-DEMO/src/calibrate.cpp
 opencv2/opencv.hpp
 -
 opencv2/calib3d.hpp

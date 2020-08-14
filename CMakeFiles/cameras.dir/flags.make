@@ -6,5 +6,5 @@ CXX_FLAGS =  -pthread
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/ward/camera_os/./inc -I/home/ward/camera_lib/Galaxy_camera/inc 
+CXX_INCLUDES = -I/home/ward/get-cameras-demo/GET-CAMERAS-3D-DEMO/./inc -I/home/ward/cameras/Galaxy_Linux-x86_Gige-U3_32bits-64bits_1.2.1911.9122 -I"/home/ward/get-cameras-demo/GET-CAMERAS-3D-DEMO/(" -I/home/ward/get-cameras-demo/GET-CAMERAS-3D-DEMO/2 -I"/home/ward/get-cameras-demo/GET-CAMERAS-3D-DEMO/)" -I/Galaxy_Linux-x86_Gige-U3_32bits-64bits_1.2.1911.9122/Galaxy_camera/inc 
 

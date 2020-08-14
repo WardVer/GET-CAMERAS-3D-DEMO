@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ward/camera_os
+CMAKE_SOURCE_DIR = /home/ward/get-cameras-demo/GET-CAMERAS-3D-DEMO
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ward/camera_os
+CMAKE_BINARY_DIR = /home/ward/get-cameras-demo/GET-CAMERAS-3D-DEMO
 
 # Include any dependencies generated for this target.
 include CMakeFiles/cameras.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/cameras.dir/flags.make
 
 CMakeFiles/cameras.dir/src/cameras.cpp.o: CMakeFiles/cameras.dir/flags.make
 CMakeFiles/cameras.dir/src/cameras.cpp.o: src/cameras.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ward/camera_os/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/cameras.dir/src/cameras.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cameras.dir/src/cameras.cpp.o -c /home/ward/camera_os/src/cameras.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ward/get-cameras-demo/GET-CAMERAS-3D-DEMO/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/cameras.dir/src/cameras.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cameras.dir/src/cameras.cpp.o -c /home/ward/get-cameras-demo/GET-CAMERAS-3D-DEMO/src/cameras.cpp
 
 CMakeFiles/cameras.dir/src/cameras.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cameras.dir/src/cameras.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ward/camera_os/src/cameras.cpp > CMakeFiles/cameras.dir/src/cameras.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ward/get-cameras-demo/GET-CAMERAS-3D-DEMO/src/cameras.cpp > CMakeFiles/cameras.dir/src/cameras.cpp.i
 
 CMakeFiles/cameras.dir/src/cameras.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cameras.dir/src/cameras.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ward/camera_os/src/cameras.cpp -o CMakeFiles/cameras.dir/src/cameras.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ward/get-cameras-demo/GET-CAMERAS-3D-DEMO/src/cameras.cpp -o CMakeFiles/cameras.dir/src/cameras.cpp.s
 
 CMakeFiles/cameras.dir/src/cameras.cpp.o.requires:
 
@@ -91,7 +91,7 @@ cameras_EXTERNAL_OBJECTS =
 libcameras.a: CMakeFiles/cameras.dir/src/cameras.cpp.o
 libcameras.a: CMakeFiles/cameras.dir/build.make
 libcameras.a: CMakeFiles/cameras.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ward/camera_os/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libcameras.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ward/get-cameras-demo/GET-CAMERAS-3D-DEMO/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libcameras.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/cameras.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cameras.dir/link.txt --verbose=$(VERBOSE)
 
@@ -109,6 +109,6 @@ CMakeFiles/cameras.dir/clean:
 .PHONY : CMakeFiles/cameras.dir/clean
 
 CMakeFiles/cameras.dir/depend:
-	cd /home/ward/camera_os && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ward/camera_os /home/ward/camera_os /home/ward/camera_os /home/ward/camera_os /home/ward/camera_os/CMakeFiles/cameras.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ward/get-cameras-demo/GET-CAMERAS-3D-DEMO && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ward/get-cameras-demo/GET-CAMERAS-3D-DEMO /home/ward/get-cameras-demo/GET-CAMERAS-3D-DEMO /home/ward/get-cameras-demo/GET-CAMERAS-3D-DEMO /home/ward/get-cameras-demo/GET-CAMERAS-3D-DEMO /home/ward/get-cameras-demo/GET-CAMERAS-3D-DEMO/CMakeFiles/cameras.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/cameras.dir/depend
 

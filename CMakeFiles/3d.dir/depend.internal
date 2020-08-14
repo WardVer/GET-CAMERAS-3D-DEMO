@@ -3,7 +3,7 @@
 
 CMakeFiles/3d.dir/src/3d_functions.cpp.o
  ./inc/3d_functions.hpp
- /home/ward/camera_os/src/3d_functions.cpp
+ /home/ward/get-cameras-demo/GET-CAMERAS-3D-DEMO/src/3d_functions.cpp
  /usr/local/include/opencv4/opencv2/calib3d.hpp
  /usr/local/include/opencv4/opencv2/core.hpp
  /usr/local/include/opencv4/opencv2/core/affine.hpp

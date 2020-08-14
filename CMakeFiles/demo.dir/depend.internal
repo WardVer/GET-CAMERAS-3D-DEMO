@@ -3,10 +3,10 @@
 
 CMakeFiles/demo.dir/src/demo.cpp.o
  ./inc/3d_functions.hpp
+ ./inc/DxImageProc.h
+ ./inc/GxIAPI.h
  ./inc/cameras.hpp
- /home/ward/camera_lib/Galaxy_camera/inc/DxImageProc.h
- /home/ward/camera_lib/Galaxy_camera/inc/GxIAPI.h
- /home/ward/camera_os/src/demo.cpp
+ /home/ward/get-cameras-demo/GET-CAMERAS-3D-DEMO/src/demo.cpp
  /usr/local/include/opencv4/opencv2/calib3d.hpp
  /usr/local/include/opencv4/opencv2/core.hpp
  /usr/local/include/opencv4/opencv2/core/affine.hpp
@@ -83,8 +83,10 @@ CMakeFiles/demo.dir/src/demo.cpp.o
  /usr/local/include/opencv4/opencv2/flann/saving.h
  /usr/local/include/opencv4/opencv2/flann/timer.h
  /usr/local/include/opencv4/opencv2/highgui.hpp
+ /usr/local/include/opencv4/opencv2/highgui/highgui.hpp
  /usr/local/include/opencv4/opencv2/imgcodecs.hpp
  /usr/local/include/opencv4/opencv2/imgproc.hpp
+ /usr/local/include/opencv4/opencv2/imgproc/imgproc.hpp
  /usr/local/include/opencv4/opencv2/ml.hpp
  /usr/local/include/opencv4/opencv2/ml/ml.inl.hpp
  /usr/local/include/opencv4/opencv2/objdetect.hpp

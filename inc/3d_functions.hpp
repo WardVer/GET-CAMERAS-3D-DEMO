@@ -51,6 +51,8 @@ public:
         
     }
 
+    projector3D() {}
+
     Point3f object_position(Point2f point1, Point2f point2, bool ground_coords);
 
     

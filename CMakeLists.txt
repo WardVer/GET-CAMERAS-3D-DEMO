@@ -7,9 +7,9 @@ IF(CMAKE_COMPILER_IS_GNUCC)
     set(CMAKE_C_FLAGS_DEBUG "${CMAKE_C_FLAGS_DEBUG} -O0")
 ENDIF(CMAKE_COMPILER_IS_GNUCC)
 
-find_package( OpenCV REQUIRED )
+find_package( OpenCV 4 REQUIRED )
 link_directories(usr/lib)
-include_directories(./inc /home/ward/camera_lib/Galaxy_camera/inc)
+include_directories(./inc /home/ward/cameras/Galaxy_Linux-x86_Gige-U3_32bits-64bits_1.2.1911.9122(2)/Galaxy_Linux-x86_Gige-U3_32bits-64bits_1.2.1911.9122/Galaxy_camera/inc)
 
 add_library(
     3d

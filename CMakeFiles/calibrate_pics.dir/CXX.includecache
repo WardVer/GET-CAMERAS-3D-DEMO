@@ -6,6 +6,26 @@
 
 #IncludeRegexTransform: 
 
+./inc/DxImageProc.h
+stdafx.h
+./inc/stdafx.h
+stdlib.h
+-
+string.h
+-
+
+./inc/GxIAPI.h
+stdint.h
+-
+stdint.h
+-
+stdint.h
+-
+stddef.h
+-
+Windows.h
+-
+
 ./inc/cameras.hpp
 GxIAPI.h
 ./inc/GxIAPI.h
@@ -18,27 +38,7 @@ stdio.h
 iostream
 -
 
-/home/ward/camera_lib/Galaxy_camera/inc/DxImageProc.h
-stdafx.h
-/home/ward/camera_lib/Galaxy_camera/inc/stdafx.h
-stdlib.h
--
-string.h
--
-
-/home/ward/camera_lib/Galaxy_camera/inc/GxIAPI.h
-stdint.h
--
-stdint.h
--
-stdint.h
--
-stddef.h
--
-Windows.h
--
-
-/home/ward/camera_os/src/calibrate_pics.cpp
+/home/ward/get-cameras-demo/GET-CAMERAS-3D-DEMO/src/calibrate_pics.cpp
 opencv2/opencv.hpp
 -
 opencv2/calib3d.hpp
@@ -50,11 +50,11 @@ opencv2/highgui.hpp
 opencv2/imgproc.hpp
 -
 GxIAPI.h
-/home/ward/camera_os/src/GxIAPI.h
+/home/ward/get-cameras-demo/GET-CAMERAS-3D-DEMO/src/GxIAPI.h
 DxImageProc.h
-/home/ward/camera_os/src/DxImageProc.h
+/home/ward/get-cameras-demo/GET-CAMERAS-3D-DEMO/src/DxImageProc.h
 cameras.hpp
-/home/ward/camera_os/src/cameras.hpp
+/home/ward/get-cameras-demo/GET-CAMERAS-3D-DEMO/src/cameras.hpp
 vector
 -
 string
@@ -72,6 +72,8 @@ stdlib.h
 ctype.h
 -
 thread
+-
+unistd.h
 -
 
 /usr/local/include/opencv4/opencv2/calib3d.hpp

@@ -42,6 +42,7 @@ int Stereocamera::initCameraSettings(float gain, float exposure, float red_ratio
     GXSetEnum(hDevice, GX_ENUM_BALANCE_RATIO_SELECTOR, GX_BALANCE_RATIO_SELECTOR_BLUE);
     GXSetFloat(hDevice, GX_FLOAT_BALANCE_RATIO, blue_ratio);
     GXSetFloat(hDevice, GX_FLOAT_ACQUISITION_FRAME_RATE, framerate);
+    GXSetEnum(hDevice, GX_ENUM_ACQUISITION_FRAME_RATE_MODE, GX_ACQUISITION_FRAME_RATE_MODE_ON);
     GXSetEnum(hDevice, GX_ENUM_TRIGGER_MODE, triggermode);
     GXSetEnum(hDevice, GX_ENUM_TRIGGER_SOURCE, GX_TRIGGER_SOURCE_SOFTWARE);
 }

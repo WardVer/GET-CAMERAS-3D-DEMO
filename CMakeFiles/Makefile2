@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ward/camera_os
+CMAKE_SOURCE_DIR = /home/ward/get-cameras-demo/GET-CAMERAS-3D-DEMO
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ward/camera_os
+CMAKE_BINARY_DIR = /home/ward/get-cameras-demo/GET-CAMERAS-3D-DEMO
 
 #=============================================================================
 # Target rules for target CMakeFiles/cameras.dir
@@ -66,7 +66,7 @@ CMAKE_BINARY_DIR = /home/ward/camera_os
 CMakeFiles/cameras.dir/all:
 	$(MAKE) -f CMakeFiles/cameras.dir/build.make CMakeFiles/cameras.dir/depend
 	$(MAKE) -f CMakeFiles/cameras.dir/build.make CMakeFiles/cameras.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ward/camera_os/CMakeFiles --progress-num=7,8 "Built target cameras"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ward/get-cameras-demo/GET-CAMERAS-3D-DEMO/CMakeFiles --progress-num=7,8 "Built target cameras"
 .PHONY : CMakeFiles/cameras.dir/all
 
 # Include target in all.
@@ -76,9 +76,9 @@ all: CMakeFiles/cameras.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/cameras.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ward/camera_os/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ward/get-cameras-demo/GET-CAMERAS-3D-DEMO/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/cameras.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ward/camera_os/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ward/get-cameras-demo/GET-CAMERAS-3D-DEMO/CMakeFiles 0
 .PHONY : CMakeFiles/cameras.dir/rule
 
 # Convenience name for target.
@@ -103,7 +103,7 @@ clean: CMakeFiles/cameras.dir/clean
 CMakeFiles/3d.dir/all:
 	$(MAKE) -f CMakeFiles/3d.dir/build.make CMakeFiles/3d.dir/depend
 	$(MAKE) -f CMakeFiles/3d.dir/build.make CMakeFiles/3d.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ward/camera_os/CMakeFiles --progress-num=1,2 "Built target 3d"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ward/get-cameras-demo/GET-CAMERAS-3D-DEMO/CMakeFiles --progress-num=1,2 "Built target 3d"
 .PHONY : CMakeFiles/3d.dir/all
 
 # Include target in all.
@@ -113,9 +113,9 @@ all: CMakeFiles/3d.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/3d.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ward/camera_os/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ward/get-cameras-demo/GET-CAMERAS-3D-DEMO/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/3d.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ward/camera_os/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ward/get-cameras-demo/GET-CAMERAS-3D-DEMO/CMakeFiles 0
 .PHONY : CMakeFiles/3d.dir/rule
 
 # Convenience name for target.
@@ -140,7 +140,7 @@ clean: CMakeFiles/3d.dir/clean
 CMakeFiles/calibrate.dir/all:
 	$(MAKE) -f CMakeFiles/calibrate.dir/build.make CMakeFiles/calibrate.dir/depend
 	$(MAKE) -f CMakeFiles/calibrate.dir/build.make CMakeFiles/calibrate.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ward/camera_os/CMakeFiles --progress-num=3,4 "Built target calibrate"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ward/get-cameras-demo/GET-CAMERAS-3D-DEMO/CMakeFiles --progress-num=3,4 "Built target calibrate"
 .PHONY : CMakeFiles/calibrate.dir/all
 
 # Include target in all.
@@ -150,9 +150,9 @@ all: CMakeFiles/calibrate.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/calibrate.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ward/camera_os/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ward/get-cameras-demo/GET-CAMERAS-3D-DEMO/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/calibrate.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ward/camera_os/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ward/get-cameras-demo/GET-CAMERAS-3D-DEMO/CMakeFiles 0
 .PHONY : CMakeFiles/calibrate.dir/rule
 
 # Convenience name for target.
@@ -178,7 +178,7 @@ CMakeFiles/demo.dir/all: CMakeFiles/cameras.dir/all
 CMakeFiles/demo.dir/all: CMakeFiles/3d.dir/all
 	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/depend
 	$(MAKE) -f CMakeFiles/demo.dir/build.make CMakeFiles/demo.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ward/camera_os/CMakeFiles --progress-num=9,10 "Built target demo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ward/get-cameras-demo/GET-CAMERAS-3D-DEMO/CMakeFiles --progress-num=9,10 "Built target demo"
 .PHONY : CMakeFiles/demo.dir/all
 
 # Include target in all.
@@ -188,9 +188,9 @@ all: CMakeFiles/demo.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/demo.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ward/camera_os/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ward/get-cameras-demo/GET-CAMERAS-3D-DEMO/CMakeFiles 6
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/demo.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ward/camera_os/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ward/get-cameras-demo/GET-CAMERAS-3D-DEMO/CMakeFiles 0
 .PHONY : CMakeFiles/demo.dir/rule
 
 # Convenience name for target.
@@ -215,7 +215,7 @@ clean: CMakeFiles/demo.dir/clean
 CMakeFiles/calibrate_pics.dir/all: CMakeFiles/cameras.dir/all
 	$(MAKE) -f CMakeFiles/calibrate_pics.dir/build.make CMakeFiles/calibrate_pics.dir/depend
 	$(MAKE) -f CMakeFiles/calibrate_pics.dir/build.make CMakeFiles/calibrate_pics.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ward/camera_os/CMakeFiles --progress-num=5,6 "Built target calibrate_pics"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/ward/get-cameras-demo/GET-CAMERAS-3D-DEMO/CMakeFiles --progress-num=5,6 "Built target calibrate_pics"
 .PHONY : CMakeFiles/calibrate_pics.dir/all
 
 # Include target in all.
@@ -225,9 +225,9 @@ all: CMakeFiles/calibrate_pics.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/calibrate_pics.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ward/camera_os/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ward/get-cameras-demo/GET-CAMERAS-3D-DEMO/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/calibrate_pics.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ward/camera_os/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ward/get-cameras-demo/GET-CAMERAS-3D-DEMO/CMakeFiles 0
 .PHONY : CMakeFiles/calibrate_pics.dir/rule
 
 # Convenience name for target.

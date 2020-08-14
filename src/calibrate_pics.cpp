@@ -18,8 +18,9 @@
 #include <stdlib.h>
 #include <ctype.h>
 #include <thread>
+#include <unistd.h>
 
-#define FLIP 0
+#define FLIP 1
 
 using namespace cv;
 using namespace std;
@@ -37,8 +38,10 @@ int pausetime = 5;
 int frame_ID = 0;
 
 int framerate = 90;
-int multiplier = 90;
+int multiplier = 45;
 int pics = 40;
+
+int done = 0;
 
 
 
@@ -125,12 +128,13 @@ void cam_pics(String location, Mat frame, FileStorage fs, int frame_ID)
 static void GX_STDC OnFrameCallbackFun(GX_FRAME_CALLBACK_PARAM *pFrame)
 {
 
+  
   cv::Mat image;
   image.create(pFrame->nHeight, pFrame->nWidth, CV_8UC1);
   image.data = (uchar *)pFrame->pImgBuf;
 
   cv::cvtColor(image, image, cv::COLOR_BayerRG2RGB);
-  cv::resize(image, image, cv::Size(1664, 832));
+  //cv::resize(image, image, cv::Size(1664, 832));
 
   if (FLIP == 1)
   {
@@ -138,8 +142,8 @@ static void GX_STDC OnFrameCallbackFun(GX_FRAME_CALLBACK_PARAM *pFrame)
     cv::flip(image, image, 1);
   }
 
-  frame1 = image(cv::Rect(0, 0, 832, 832));
-  frame2 = image(cv::Rect(832, 0, 832, 832));
+  frame1 = image(cv::Rect(0, 0, image.cols/2, image.rows));
+  frame2 = image(cv::Rect(image.cols/2, 0, image.cols/2, image.rows));
 
   if (frame_ID < framerate * pausetime)
   {
@@ -182,17 +186,18 @@ static void GX_STDC OnFrameCallbackFun(GX_FRAME_CALLBACK_PARAM *pFrame)
     else if (0 == strcmp(calib_func.c_str(), "ground"))
     {
       imwrite("groundpattern.jpg", frame1);
-      exit;
+      done = 1;
     }
     
   }
+
 
   //cout << frame_ID << endl;
   frame_ID++;
 
   if (frame_ID == framerate * pausetime + multiplier * pics)
   {
-    exit;
+    done = 1;
   }
 
 
@@ -202,7 +207,7 @@ return;
 int main(int argc, char **argv)
 {
   
-  
+  calib_func = argv[1];
 
   if (0 == strcmp(argv[1], "extr"))
   {
@@ -225,7 +230,11 @@ int main(int argc, char **argv)
 
 
 
-  Stereocamera cam(1, 16, 10000, 1.5, 1, 1.5, 90, GX_TRIGGER_MODE_OFF);
+  Stereocamera cam(1, 16, 1000, 1.5, 1, 1.5, 90, GX_TRIGGER_MODE_OFF);
   cam.setCallback(OnFrameCallbackFun);
   cam.startCamera();
+
+  while(done==0){
+    usleep(100);
+  }
 }
