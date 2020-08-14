@@ -43,6 +43,12 @@ This step is done with OpenCV as they provide a relatively easy to use calibrati
 Print it out and make sure that you can't bend it and that it is as big as possible. The best solution would be to glue it to something like a wooden board. It is also very important that the pattern has an even amount of squares in 1 dimension and an uneven amount in the other, like 9 squares by 6 squares for example. Keep into account that OpenCV expects you to fill in the amound of square intersections, not the amount of squares. This means you need to substract 1 in each dimension. If your pattern is 11 x 8 squares then you need to fill in 10 x 7.
 
 ### MAKE SURE TO EDIT THE EXPECTED PROPERTIES OF THE PATTERN IN THE 3d_functions.hpp FILE.
+these properties are 
+
+#define PATTERN_WIDTH  
+#define PATTERN_HEIGHT
+#define PATTERN_SQUARE_SIZE
+
 
 1. take pictures for getting the intrinsic parameters of the camera
 
