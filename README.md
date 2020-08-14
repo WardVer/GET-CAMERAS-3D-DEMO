@@ -42,7 +42,7 @@ Print it out and make sure that you can't bend it and that it is as big as possi
 
 1. take pictures for getting the intrinsic parameters of the camera
 
- use the line "calibration_pics cam1" AND "calibration_pics cam2"
+ use the line "calibration_pics cam1" AND "calibration_pics cam2" to take pictures for both cameras seperately
 
  this will activate the cameras to take 40 pictures in total, make sure the pattern is always visible. Hold the pattern close and move around slowly.
  
