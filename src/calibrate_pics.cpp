@@ -43,8 +43,6 @@ int pics = 40;
 
 int done = 0;
 
-
-
 void show_msg_in_feed(Mat frame, string message, int frame_ID)
 {
   flip(frame, frame, 1);
@@ -128,7 +126,6 @@ void cam_pics(String location, Mat frame, FileStorage fs, int frame_ID)
 static void GX_STDC OnFrameCallbackFun(GX_FRAME_CALLBACK_PARAM *pFrame)
 {
 
-  
   cv::Mat image;
   image.create(pFrame->nHeight, pFrame->nWidth, CV_8UC1);
   image.data = (uchar *)pFrame->pImgBuf;
@@ -142,8 +139,8 @@ static void GX_STDC OnFrameCallbackFun(GX_FRAME_CALLBACK_PARAM *pFrame)
     cv::flip(image, image, 1);
   }
 
-  frame1 = image(cv::Rect(0, 0, image.cols/2, image.rows));
-  frame2 = image(cv::Rect(image.cols/2, 0, image.cols/2, image.rows));
+  frame1 = image(cv::Rect(0, 0, image.cols / 2, image.rows));
+  frame2 = image(cv::Rect(image.cols / 2, 0, image.cols / 2, image.rows));
 
   if (frame_ID < framerate * pausetime)
   {
@@ -164,7 +161,6 @@ static void GX_STDC OnFrameCallbackFun(GX_FRAME_CALLBACK_PARAM *pFrame)
     {
       show_msg_in_feed(frame1, "ground", frame_ID);
     }
-    
   }
   else if (frame_ID >= framerate * pausetime)
   {
@@ -188,9 +184,7 @@ static void GX_STDC OnFrameCallbackFun(GX_FRAME_CALLBACK_PARAM *pFrame)
       imwrite("groundpattern.jpg", frame1);
       done = 1;
     }
-    
   }
-
 
   //cout << frame_ID << endl;
   frame_ID++;
@@ -200,13 +194,12 @@ static void GX_STDC OnFrameCallbackFun(GX_FRAME_CALLBACK_PARAM *pFrame)
     done = 1;
   }
 
-
-return;
+  return;
 }
 
 int main(int argc, char **argv)
 {
-  
+
   calib_func = argv[1];
 
   if (0 == strcmp(argv[1], "extr"))
@@ -228,13 +221,16 @@ int main(int argc, char **argv)
        << "[";
   }
 
-
+  system("mkdir -p ./calibrationpics/cam1");
+  system("mkdir -p ./calibrationpics/cam2");
+  system("mkdir -p ./calibrationpics/extr");
 
   Stereocamera cam(1, 16, 1000, 1.5, 1, 1.5, 90, GX_TRIGGER_MODE_OFF);
   cam.setCallback(OnFrameCallbackFun);
   cam.startCamera();
 
-  while(done==0){
+  while (done == 0)
+  {
     usleep(100);
   }
 }
