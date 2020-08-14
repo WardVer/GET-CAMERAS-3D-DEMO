@@ -16,6 +16,10 @@
 using namespace cv;
 using namespace std;
 
+#define PATTERN_WIDTH 9 
+#define PATTERN_HEIGHT 6
+#define PATTERN_SQUARE_SIZE 3.78 //in centimeters
+
 
 
 class projector3D

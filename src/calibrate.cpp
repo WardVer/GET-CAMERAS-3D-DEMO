@@ -34,6 +34,8 @@
 #include <ctype.h>
 #include <thread>
 
+#include "3d_functions.hpp"
+
 
 using namespace cv;
 using namespace std;
@@ -334,9 +336,9 @@ int main(int argc, char** argv)
     imagelistpairs_t = "pairlist.xml";
     imagelistcam1_t = "imglist1.xml";
     imagelistcam2_t = "imglist2.xml";
-    boardSize.width = 9;
-    boardSize.height = 6;
-    float squareSize = 3.78f;
+    boardSize.width = PATTERN_WIDTH;
+    boardSize.height = PATTERN_HEIGHT;
+    float squareSize = PATTERN_SQUARE_SIZE;
     if (!parser.check())
     {
         parser.printErrors();

@@ -9,9 +9,6 @@
 #include <unistd.h>
 
 #define FLIP 1
-#define BOARD_WIDTH 9
-#define BOARD_HEIGHT 6
-#define SQUARE_SIZE 3.78f
 
 int iLowH = 42;
 int iHighH = 81;
@@ -22,7 +19,7 @@ int iHighS = 255;
 int iLowV = 0;
 int iHighV = 255;
 
-projector3D projector(Size(BOARD_WIDTH, BOARD_HEIGHT), SQUARE_SIZE);
+projector3D projector(Size(PATTERN_WIDTH, PATTERN_HEIGHT), PATTERN_SQUARE_SIZE);
 
 void postprocess_contours(Mat &imgcontours)
 {
