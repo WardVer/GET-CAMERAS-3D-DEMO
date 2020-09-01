@@ -1,6 +1,6 @@
 # Image detection with stereo cameras
 
-This is a very basic representation of the image detection for Formula Electric Belgium for driving our car autonomously. But most importantly it serves as an example on how to use stereo cameras (more specifically those provided my [Get-Cameras.com](https://www.get-cameras.com/Image-Processing-Products)).
+This is a very basic representation of the image detection for Formula Electric Belgium for driving our car autonomously. But most importantly it serves as an example on how to use stereo cameras (more specifically those provided by [Get-Cameras.com](https://www.get-cameras.com/Image-Processing-Products)).
 
 Our original software uses complex neural networks and other techniques to get a more accurate result and to give distinction between all the different cones, but here we replaced that with a basic color filter to do object detection.
 
